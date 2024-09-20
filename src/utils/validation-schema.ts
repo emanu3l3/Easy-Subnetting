@@ -15,6 +15,5 @@ export const validationSchema = Yup.object().shape({
 	numberSubnets: Yup.number()
 		.typeError("The number of subnets must be a valid number.")
 		.min(1, " The number of subnets must be at least 1.")
-		// inserisci il valore max
 		.required("The number of subnets is mandatory."),
 })
